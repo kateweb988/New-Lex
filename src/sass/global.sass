@@ -1,0 +1,160 @@
+body
+   font-family: 'Manrope', sans-serif
+   background: #FBFBFB
+   font-weight: 400
+   font-size: 16px
+   line-height: 22px
+   color: #11243E
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $blue
+.container
+   padding: 0 15px
+   max-width: 1309px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-weight: 600
+   font-size: 43px
+   line-height: 55px
+   color: #FFFFFF
+   margin: 0
+h2 
+   margin: 0
+   font-weight: 600
+   font-size: 34px
+   line-height: 44px
+   text-align: center
+   color: #11243E !important
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $blue !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   color: white
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $blue !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $blue
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 6px
+
+.photo__scroll 
+   scrollbar-width: thin
+   scrollbar-color: blue $blue
+.photo__scroll::-webkit-scrollbar 
+   height: 0px
+   width: 0px
+.photo__scroll::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+.photo__scroll::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   width: 212px
+   height: 61px
+   background: $blue
+   box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09)
+   border-radius: 5px
+   transition: 0.5s
+   font-weight: 500
+   font-size: 18px
+   line-height: 140%
+   color: #FFFFFF
+   border: 1px solid transparent
+   &:hover 
+      color: $blue
+      background: transparent
+      border: 1px solid $blue
+   &_2
+      background: #FDD21B
+      color: #11243E
+      transition: 0.5s
+      box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09)
+      &:hover 
+         border: 1px solid #FDD21B
+         color: #FDD21B
+   &_3 
+      background: #FFFFFF
+      box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09)
+      border-radius: 5px
+      color: #11243E
+      transition: 0.5s
+      &:hover 
+         color: white 
+         border: 1px solid white
+         background: transparent
+.mob 
+   display: none
+.del 
+   display: block
+.why3__form input:focus
+   border: 1px solid #FFFFFF !important
