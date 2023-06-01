@@ -88,6 +88,30 @@ document.addEventListener("DOMContentLoaded", () => {
   new ItcTabs('.tabs');
 });
 document.addEventListener("DOMContentLoaded", () => {
+  const value = document.querySelector("#value")
+  const input = document.querySelector("#pi_input")
+  value.textContent = input.value
+  input.addEventListener("input", (event) => {
+    value.textContent = event.target.value
+  })
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const value = document.querySelector("#value2")
+  const input = document.querySelector("#pi_input2")
+  value.textContent = input.value
+  input.addEventListener("input", (event) => {
+    value.textContent = event.target.value
+  })
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const value = document.querySelector("#value3")
+  const input = document.querySelector("#pi_input3")
+  value.textContent = input.value
+  input.addEventListener("input", (event) => {
+    value.textContent = event.target.value
+  })
+});
+document.addEventListener("DOMContentLoaded", () => {
   class ItcTabs {
     constructor(target, config) {
       const defaultConfig = {};
@@ -339,9 +363,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper(".swiper1", {
     spaceBetween: 105,
     slidesPerView: "3",
-    loop: false,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination1",
+      clickable: true,
+
     },
     navigation: {
       nextEl: ".swiper-button-next1",
@@ -373,6 +403,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: false,
     pagination: {
       el: ".swiper-pagination2",
+      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next2",
@@ -530,40 +561,41 @@ document.addEventListener("DOMContentLoaded", () => {
     menu2.classList.toggle('active');
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  // svg
+  $(function () {
+    jQuery('img.svg').each(function () {
+      var $img = jQuery(this);
+      var imgID = $img.attr('id');
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
 
-// svg
-$(function () {
-  jQuery('img.svg').each(function () {
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
+      jQuery.get(imgURL, function (data) {
+        // Get the SVG tag, ignore the rest
+        var $svg = jQuery(data).find('svg');
 
-    jQuery.get(imgURL, function (data) {
-      // Get the SVG tag, ignore the rest
-      var $svg = jQuery(data).find('svg');
+        // Add replaced image's ID to the new SVG
+        if (typeof imgID !== 'undefined') {
+          $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if (typeof imgClass !== 'undefined') {
+          $svg = $svg.attr('class', imgClass + ' replaced-svg');
+        }
 
-      // Add replaced image's ID to the new SVG
-      if (typeof imgID !== 'undefined') {
-        $svg = $svg.attr('id', imgID);
-      }
-      // Add replaced image's classes to the new SVG
-      if (typeof imgClass !== 'undefined') {
-        $svg = $svg.attr('class', imgClass + ' replaced-svg');
-      }
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
 
-      // Remove any invalid XML tags as per http://validator.w3.org
-      $svg = $svg.removeAttr('xmlns:a');
+        // Check if the viewport is set, else we gonna set it if we can.
+        if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+          $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+        }
 
-      // Check if the viewport is set, else we gonna set it if we can.
-      if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-      }
+        // Replace image with new SVG
+        $img.replaceWith($svg);
 
-      // Replace image with new SVG
-      $img.replaceWith($svg);
+      }, 'xml');
 
-    }, 'xml');
-
+    });
   });
 });

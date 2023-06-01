@@ -222,16 +222,6 @@ input:-moz-placeholder
          position: absolute
          right: 0
          top: 0
-#map
-   width: 560px
-   height: 426px
-   border-radius: 22px
-   overflow: hidden
-   filter: invert(100%)
-   -ms-filter: invert(100%)
-   -webkit-filter: invert(100%)
-   -moz-filter: invert(100%)
-   -o-filter: invert(100%)
 .def__select
    .lang_select
       width: 200px
@@ -854,6 +844,10 @@ h2, ul.info li, #event-change
       height: 61px
 .team 
    padding: 57px 0
+   .container
+      position: relative
+   .van__fig
+      top: -188px
    .swiper1 
       overflow: hidden
       margin-top: 39px
@@ -1033,6 +1027,7 @@ h2, ul.info li, #event-change
       padding-top: 41px
       border-top: 1px solid rgba(156, 164, 172, 0.32)
       margin-top: 23px
+      justify-content: space-between
    &__site 
       margin-right: 14px
       &:last-child
@@ -1054,6 +1049,28 @@ h2, ul.info li, #event-change
    &__right 
       position: relative
       top: -6px
+   &__one 
+      p 
+         font-size: 12px
+         color: #11243E
+         margin-bottom: 20px
+   &__copyright 
+      font-size: 12px
+      color: #11243E
+      margin-top: 30px
+   &-gasfort 
+      text-align: center
+      span 
+         font-size: 10px
+         color: #11243E
+         line-height: 100%
+         display: block
+         margin-top: 5px
+   &__mail
+      font-size: 12px
+      color: #11243E
+      &:hover 
+         color: $blue
 .top 
    padding: 39px 0 20px
    &__box 
@@ -1069,21 +1086,30 @@ h2, ul.info li, #event-change
       align-items: center
       padding-left: 20px
       margin-bottom: 40px
-      overflow: hidden
+      overflow: visible
       position: relative
-      p 
+      transition: 0.5s
+      a
          font-weight: 600
          font-size: 18px
          line-height: 140%
          color: rgba(17, 36, 62, 0.84)
          position: relative
          z-index: 1
+         transition: 0.5s 
+         &:hover 
+            color: $blue
+      &:hover
+         border: 1px solid $blue
+         .top__wrap
+            opacity: 1
+            pointer-events: initial
       &:before 
          content: ""
          display: block
          position: absolute
          left: 0
-         bottom: -20px
+         bottom: -16px
          background: url(/img/top.svg) no-repeat 
          width: 69px
          height: 80px
@@ -1091,6 +1117,27 @@ h2, ul.info li, #event-change
       &:nth-child(9), &:nth-child(10)
          width: 48.5%
          height: 65px
+   &__wrap
+      position: absolute
+      bottom: -96px
+      left: 0
+      width: 100%
+      height: auto
+      padding: 20px
+      background: white
+      border-radius: 10px
+      z-index: 3
+      transition: 0.5s 
+      pointer-events: none
+      opacity: 0
+      border: 1px solid rgba(80, 90, 204, 0.24)
+      a 
+         color: #11243E
+         font-size: 14px
+         margin-bottom: 15px
+         display: block
+         &:last-child
+            margin-bottom: 0
 .page 
    .why__block
       margin-top: 0
@@ -1142,6 +1189,7 @@ h2, ul.info li, #event-change
          width: 100%
          max-width: 595px 
          margin-left: 25px
+         margin-right: 54px
    &__box 
       margin-top: 50px
    &__row 
@@ -1226,11 +1274,6 @@ input[type=checkbox]:checked + label:before
          color: #11243E
    &:last-child
       margin-bottom: 0
-output 
-   background: #ff4500
-   padding: 5px 16px
-   border-radius: 3px
-   color: #fff
 input[type="number"] 
    width: 40px
    padding: 4px 5px
@@ -1319,6 +1362,7 @@ input[type="range"]::-ms-track
       justify-content: space-between
    &__item 
       width: 25%
+      position: relative
       input[type=text] 
          width: 100%
          height: 54px
@@ -1329,8 +1373,16 @@ input[type="range"]::-ms-track
          font-size: 16px
          line-height: 22px
          color: #11243E
+         pointer-events: none
       &:last-child
          width: max-content
+      output 
+         color: #fff
+         color: #11243E
+         font-size: 16px
+         position: absolute
+         bottom: 36px
+         left: 16px
    &__block 
       width: 537px
       height: auto
@@ -1534,7 +1586,7 @@ input[type="range"]::-ms-track
             width: 17px
             height: 18px
             margin-right: 10px
-            background: url(/img/check1.png) no-repeat
+            background: url(/img/check1.svg) no-repeat
             flex: 1 0 auto 
             max-width: 17px
    &__sub 
@@ -1810,7 +1862,7 @@ input[type="range"]::-ms-track
                width: 17px
                height: 18px
                margin-right: 10px
-               background: url(/img/check2.png) no-repeat
+               background: url(/img/check2.svg) no-repeat
                flex: 1 0 auto 
                max-width: 17px
    .swiper-pagination2
@@ -1919,6 +1971,50 @@ input[type="range"]::-ms-track
    .we__item
       height: auto
       width: 48.5%
-
-
-
+.header-widget 
+   position: relative
+   left: 0px
+   top: 0px
+.outerFeedback 
+   width: 640px
+   height: 645px
+   position: relative
+#iframeFeedback 
+   width: 100%
+   height: 100%
+   border: 1px solid #e6e6e6
+   border-radius: 8px 0 0 8px
+   box-sizing: border-box
+.outerFeedbackLink 
+   box-sizing: border-box
+   text-decoration: none
+   color: #b3b3b3
+   font-size: 10px
+   padding: 0 20px
+   position: absolute
+   bottom: 8px
+   width: 100%
+   text-align: center
+   left: 0
+   overflow: hidden
+   text-overflow: ellipsis
+   display: block
+   max-height: 14px
+   white-space: nowrap
+   padding: 0 16px
+   box-sizing: border-box
+#map 
+   width: 640px
+   height: 645px
+   border-radius: 0 8px 8px 0
+   overflow: hidden
+.feedBackContent 
+   width: 100%
+   display: flex
+   justify-content: center
+   align-items: center
+   position: relative
+.feedback 
+   padding: 30px 0
+   h2 
+      margin-bottom: 40px
