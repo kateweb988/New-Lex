@@ -849,14 +849,18 @@ h2, ul.info li, #event-change
    .van__fig
       top: -188px
    .swiper1 
-      overflow: hidden
-      margin-top: 39px
+      overflow: visible 
+      margin: 39px auto 0
+      max-width: 358px 
+      width: 100%
+      // overflow: hidden
+      // margin-top: 39px
       padding-top: 66px
       position: relative
       .swiper-slide 
          text-align: center
          transition: 0.2s
-      .swiper-slide-next 
+      .swiper-slide-active
          position: relative
          top: -66px
          .team__pic 
@@ -899,11 +903,14 @@ h2, ul.info li, #event-change
       position: absolute
       align-items: center
       width: 100%
-      max-width: 400px 
+      max-width: 526px
       top: 25%
       z-index: 3
+      width: 397px
       left: 50%
-      margin-left: -200px
+      margin-left: -199px
+      .swiper-button-disabled
+         opacity: 0
    h2 
       span 
          font-weight: 400
@@ -1463,9 +1470,12 @@ input[type="range"]::-ms-track
       height: 61px
       margin: 0 auto
    .swiper2 
-      overflow: hidden
+      overflow: visible
       position: relative
       padding-top: 39px
+      width: 100%
+      max-width: 365px
+      margin: 0 auto
       .swiper-slide 
          text-align: center
          transition: 0.2s
@@ -1475,7 +1485,7 @@ input[type="range"]::-ms-track
          height: 771px  
          display: flex
          flex-direction: column
-      .swiper-slide-next
+      .swiper-slide-active
          position: relative
          top: -32px
          background: $blue
@@ -1531,12 +1541,12 @@ input[type="range"]::-ms-track
       justify-content: space-between
       position: absolute
       align-items: center
-      width: 100%
-      max-width: 510px
+      width: 110%
+      max-width: 566px
       top: 37%
       z-index: 3
       left: 50%
-      margin-left: -253px
+      margin-left: -200px
    &__top 
       align-items: center
       justify-content: space-between
@@ -1836,8 +1846,11 @@ input[type="range"]::-ms-track
       text-align: left
       margin-bottom: 40px
    .swiper2 
-      overflow: hidden
+      overflow: visible
       position: relative
+      width: 100% 
+      margin: 0 auto 
+      max-width: 400px
    .swiper-slide 
       text-align: center
       transition: 0.2s
@@ -1847,7 +1860,7 @@ input[type="range"]::-ms-track
       height: auto 
       display: flex
       flex-direction: column
-   .swiper-slide-next
+   .swiper-slide-active
       background: $blue
       .tar__title, .tar__text, .tar__list li, .tar__el, .tar__sum 
          color: white
@@ -1901,12 +1914,12 @@ input[type="range"]::-ms-track
       justify-content: space-between
       position: absolute
       align-items: center
-      width: 100%
+      width: 111%
       max-width: 510px
       top: 37%
       z-index: 3
       left: 50%
-      margin-left: -253px
+      margin-left: -221px
 .item 
    padding: 50px 0 
    &__sub 

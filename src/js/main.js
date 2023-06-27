@@ -362,8 +362,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper(".swiper1", {
     spaceBetween: 105,
-    slidesPerView: "3",
-    loop: true,
+    initialSlide: 1,
+    slidesPerView: "1",
+    // loop: true,
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
@@ -393,14 +394,14 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       1200: {
         spaceBetween: 105,
-        slidesPerView: 3
+        slidesPerView: 1
       }
     }
   });
   var swiper2 = new Swiper(".swiper2", {
     spaceBetween: 92,
-    slidesPerView: "3",
-    loop: false,
+    slidesPerView: "1",
+    initialSlide: 1,
     pagination: {
       el: ".swiper-pagination2",
       clickable: true,
@@ -425,7 +426,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       1200: {
         spaceBetween: 92,
-        slidesPerView: 3
+        slidesPerView: 1
       }
     }
   });

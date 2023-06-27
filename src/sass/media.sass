@@ -1,5 +1,5 @@
 @media screen and (max-width: 1300px)
-   .team .swiper1 .swiper-slide-next .team__pic 
+   .team .swiper1 .swiper-slide-active .team__pic 
       width: 320px
       height: 320px
    .team__row
@@ -13,6 +13,15 @@
    .top2 .top__block img
       margin-left: 19px
 @media screen and (max-width: 1199px)
+   .price .team__row 
+      width: 100%
+      margin-left: -199px
+   .swiper1, .swiper2 
+      overflow: hidden !important
+   .tar .team__row
+      width: 100%
+      margin-left: -175px
+      max-width: 350px
    .nav__personal
       display: block
       margin-right: 51px
@@ -103,6 +112,10 @@
       display: none
    .team .swiper1
       margin-top: 0
+      overflow: hidden 
+      max-width: 100%
+   .team .swiper1 .swiper-slide-active
+      top: 0
    .team__row 
       top: 31%
       margin-left: -186px
@@ -805,11 +818,11 @@
       &__text 
          font-size: 14px
          line-height: 19px
-      .swiper1 .swiper-slide-next
+      .swiper1 .swiper-slide-active
          top: 0 !important
-      .swiper1 .swiper-slide
-         &:nth-child(n+4) 
-            display: none
+      // .swiper1 .swiper-slide
+      //    &:nth-child(n+4) 
+      //       display: none
       .swiper1
          padding-top: 34px
    .team .swiper1 .swiper-pagination1
