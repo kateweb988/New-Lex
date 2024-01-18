@@ -339,8 +339,8 @@ html *::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: 'Bebas Neue Cyrillic';
-  src: url("/fonts/BebasNeueCyrillic.eot");
-  src: url("/fonts/BebasNeueCyrillic.eot?#iefix") format("embedded-opentype"), url("/fonts/BebasNeueCyrillic.woff2") format("woff2"), url("/fonts/BebasNeueCyrillic.woff") format("woff"), url("/fonts/BebasNeueCyrillic.ttf") format("truetype"), url("/fonts/BebasNeueCyrillic.svg#BebasNeueCyrillic") format("svg");
+  src: url("../fonts/BebasNeueCyrillic.eot");
+  src: url("../fonts/BebasNeueCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueCyrillic.woff2") format("woff2"), url("../fonts/BebasNeueCyrillic.woff") format("woff"), url("../fonts/BebasNeueCyrillic.ttf") format("truetype"), url("../fonts/BebasNeueCyrillic.svg#BebasNeueCyrillic") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -430,7 +430,7 @@ input:-moz-placeholder {
     position: absolute;
     content: "";
     display: block;
-    background: url(/img/popup.svg) no-repeat;
+    background: url(../img/popup.svg) no-repeat;
     right: -130px;
     bottom: -133px;
     width: 253px;
@@ -482,7 +482,7 @@ input:-moz-placeholder {
       position: absolute;
       top: -16px;
       left: 1px;
-      background: url(/img/dot.svg) no-repeat;
+      background: url(../img/dot.svg) no-repeat;
       width: 62px;
       height: 62px; }
   .popup__title, .popup2__title, .popup3__title {
@@ -528,7 +528,7 @@ input:-moz-placeholder {
   border-radius: 50%; }
 
 .custom-checkbox:checked + label::before {
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #505ACC; }
 
 .menu-btn2 {
@@ -538,7 +538,7 @@ input:-moz-placeholder {
   right: 2%;
   top: 71%;
   z-index: 10;
-  background: url(/img/mess.png) no-repeat;
+  background: url(../img/mess.png) no-repeat;
   cursor: pointer;
   opacity: 0.7; }
 
@@ -561,7 +561,7 @@ input:-moz-placeholder {
 .menu-btn2.active {
   overflow: visible;
   position: fixed;
-  background: url(/img/close2.svg) no-repeat;
+  background: url(../img/close2.svg) no-repeat;
   right: 8.8%;
   top: 69%;
   width: 52px;
@@ -665,7 +665,7 @@ input:-moz-placeholder {
   height: 15px;
   text-align: center;
   vertical-align: top;
-  background: url(/img/down.svg) no-repeat !important;
+  background: url(../img/down.svg) no-repeat !important;
   position: absolute;
   right: 20px;
   top: 20px; }
@@ -912,7 +912,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       left: -25px;
       top: 0;
-      background: url(/img/van2.svg) no-repeat;
+      background: url(../img/van2.svg) no-repeat;
       width: 184px;
       height: 184px; }
   .van__block {
@@ -984,7 +984,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       content: "";
       display: block;
-      background: url(/img/w.svg) no-repeat;
+      background: url(../img/w.svg) no-repeat;
       right: -76px;
       top: 0px;
       width: 143px;
@@ -1045,7 +1045,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       content: "";
       display: block;
-      background: url(/img/w.svg) no-repeat;
+      background: url(../img/w.svg) no-repeat;
       right: -76px;
       top: -1px;
       width: 143px;
@@ -1074,7 +1074,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       content: "";
       display: block;
-      background: url(/img/w.svg) no-repeat;
+      background: url(../img/w.svg) no-repeat;
       right: -76px;
       top: -1px;
       width: 143px;
@@ -1147,7 +1147,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       content: "";
       display: block;
-      background: url(/img/ww2.svg) no-repeat;
+      background: url(../img/ww2.svg) no-repeat;
       right: -118px;
       top: -1px;
       width: 233px;
@@ -1233,7 +1233,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       content: "";
       display: block;
-      background: url(/img/ww2.svg) no-repeat;
+      background: url(../img/ww2.svg) no-repeat;
       right: -118px;
       top: -1px;
       width: 233px;
@@ -1287,7 +1287,7 @@ h2, ul.info li, #event-change {
         height: 10px; }
       .team .swiper1 .swiper-pagination1 .swiper-pagination-bullet-active {
         opacity: 1;
-        background: url(/img/act.svg) no-repeat;
+        background: url(../img/act.svg) no-repeat;
         width: 27px;
         height: 27px; }
   .team__arr {
@@ -1524,7 +1524,7 @@ h2, ul.info li, #event-change {
       position: absolute;
       left: 0;
       bottom: -16px;
-      background: url(/img/top.svg) no-repeat;
+      background: url(../img/top.svg) no-repeat;
       width: 69px;
       height: 80px;
       z-index: 0; }
@@ -1630,7 +1630,7 @@ h2, ul.info li, #event-change {
           position: absolute;
           content: "";
           display: block;
-          background: url(/img/ww2.svg) no-repeat;
+          background: url(../img/ww2.svg) no-repeat;
           right: -52px;
           top: -1px;
           width: 107px;
@@ -1725,7 +1725,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: url(/img/range.svg) no-repeat;
+  background: url(../img/range.svg) no-repeat;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out; }
@@ -1735,7 +1735,7 @@ input[type="range"]::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: url(/img/range.svg) no-repeat;
+  background: url(../img/range.svg) no-repeat;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out; }
@@ -1926,7 +1926,7 @@ input[type="range"]::-ms-track {
         width: 17px;
         height: 18px;
         margin-right: 10px;
-        background: url(/img/check2.png) no-repeat;
+        background: url(../img/check2.png) no-repeat;
         flex: 1 0 auto;
         max-width: 17px; }
     .tar .swiper2 .swiper-pagination2 {
@@ -2019,7 +2019,7 @@ input[type="range"]::-ms-track {
         width: 17px;
         height: 18px;
         margin-right: 10px;
-        background: url(/img/check1.svg) no-repeat;
+        background: url(../img/check1.svg) no-repeat;
         flex: 1 0 auto;
         max-width: 17px; }
   .tar__sub {
@@ -2080,7 +2080,7 @@ input[type="range"]::-ms-track {
       position: absolute;
       left: 0;
       top: -1px;
-      background: url(/img/rr.svg) no-repeat;
+      background: url(../img/rr.svg) no-repeat;
       width: 53px;
       height: 53px;
       z-index: 0; }
@@ -2219,7 +2219,7 @@ input[type="range"]::-ms-track {
     bottom: -197px;
     height: 176px;
     width: 2px;
-    background: url(/img/new.svg) no-repeat; }
+    background: url(../img/new.svg) no-repeat; }
 
 .calc2 .calc__item input[type=text] {
   padding-left: 30%; }
@@ -2267,7 +2267,7 @@ input[type="range"]::-ms-track {
     position: absolute;
     content: "";
     display: block;
-    background: url(/img/w.svg) no-repeat;
+    background: url(../img/w.svg) no-repeat;
     right: -76px;
     top: 0px;
     width: 143px;
@@ -2280,7 +2280,7 @@ input[type="range"]::-ms-track {
   position: absolute;
   content: "";
   display: block;
-  background: url(/img/w.svg) no-repeat;
+  background: url(../img/w.svg) no-repeat;
   left: 1px;
   top: -77px;
   width: 143px;
@@ -2324,7 +2324,7 @@ input[type="range"]::-ms-track {
         width: 17px;
         height: 18px;
         margin-right: 10px;
-        background: url(/img/check2.svg) no-repeat;
+        background: url(../img/check2.svg) no-repeat;
         flex: 1 0 auto;
         max-width: 17px; }
   .price .swiper-pagination2 {
@@ -2411,7 +2411,7 @@ input[type="range"]::-ms-track {
   height: 89px; }
 
 .info__item_big2:before {
-  background: url(/img/q.svg) no-repeat;
+  background: url(../img/q.svg) no-repeat;
   width: 2px;
   height: 372px;
   bottom: -391px; }
@@ -2505,7 +2505,7 @@ input[type="range"]::-ms-track {
   position: absolute;
   content: "";
   display: block;
-  background: url(/img/www.svg) no-repeat;
+  background: url(../img/www.svg) no-repeat;
   right: -368px;
   bottom: -302px;
   width: 734px;
@@ -2724,7 +2724,7 @@ input[type="range"]::-ms-track {
     top: 48px;
     z-index: 11;
     overflow: hidden;
-    background: url(/img/burger.svg) no-repeat; }
+    background: url(../img/burger.svg) no-repeat; }
   .menu {
     position: fixed;
     top: 0;
@@ -2755,7 +2755,7 @@ input[type="range"]::-ms-track {
     position: fixed;
     right: 25px;
     top: 48px;
-    background: url(/img/close2.svg) no-repeat;
+    background: url(../img/close2.svg) no-repeat;
     background-size: contain; }
   .menu-btn, .menu {
     display: block; }
@@ -2924,7 +2924,7 @@ input[type="range"]::-ms-track {
       width: 17px;
       height: 18px;
       margin-right: 10px;
-      background: url(/img/check2.png) no-repeat;
+      background: url(../img/check2.png) no-repeat;
       flex: 1 0 auto;
       max-width: 17px; }
     .tar .swiper2 .swiper-slide:nth-child(n+4) {
@@ -2981,7 +2981,7 @@ input[type="range"]::-ms-track {
       width: 17px;
       height: 18px;
       margin-right: 10px;
-      background: url(/img/check2.png) no-repeat;
+      background: url(../img/check2.png) no-repeat;
       flex: 1 0 auto;
       max-width: 17px; }
   .price .tar__bottom {
@@ -3487,7 +3487,7 @@ input[type="range"]::-ms-track {
     .van__name br {
       display: none; }
   .van__item:before {
-    background: url(/img/van22.svg) no-repeat; }
+    background: url(../img/van22.svg) no-repeat; }
   .van__flex:nth-child(1) .van__item:nth-child(1) {
     margin-bottom: 276px; }
   .van__item:before {
@@ -3505,7 +3505,7 @@ input[type="range"]::-ms-track {
   .van .about__see, .van .about__see2 {
     display: none; }
   .we__item:before {
-    background: url(/img/ww.svg) no-repeat;
+    background: url(../img/ww.svg) no-repeat;
     right: -103px;
     top: -5px; }
   .we h2 {
@@ -3945,7 +3945,7 @@ input[type="range"]::-ms-track {
     .why-new .why__block:after {
       content: "";
       display: block;
-      background: url(/img/figg.svg) no-repeat;
+      background: url(../img/figg.svg) no-repeat;
       width: 141px;
       height: 141px;
       position: absolute;
